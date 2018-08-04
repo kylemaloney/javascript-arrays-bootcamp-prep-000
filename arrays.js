@@ -5,22 +5,22 @@ var chocolateBars = [
   'skittles'];
 
 function addElementToBeginningOfArray(array, element){
-  var y = [element, ...array];
-  return y;
+  var newArray = [element, ...array];
+  return newArray;
 }
 
 function destructivelyAddElementToBeginningOfArray (array, element){
-  x = [array, ...array];
-  return x; 
+  array = [element, ...array];
+  return array; 
 }
 
-function addElementToEndOfArray(x, add){
-  var y = [...x, add];
-  return y;
+function addElementToEndOfArray(array, element){
+  var newArray = [...array, element];
+  return newArray;
 }
 
-function destructivelyAddElementToEndOfArray(x, add){
-  x = [...x, add];
-  return x; 
+function destructivelyAddElementToEndOfArray(array, element){
+  array = [...array, element];
+  return array; 
 }
 
